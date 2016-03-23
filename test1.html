@@ -1,0 +1,117 @@
+<html>
+<style>
+class label1
+{
+	font color: red
+}
+</style>
+<body>
+<script>
+	function form1()
+	{
+		var name=document.getElementById("uname").value;
+		/*var code=document.getElementById("pass");
+		var x=document.getElementById("output")[0].checked;
+		var y=document.getElementById("output")[1].checked;
+		var mail=document.getElementById("email");*/
+		var validate=true;
+	}
+if(name=="")
+{
+	document.getElementById("label1").innerHTML="Enter your name";
+	validate=false;
+}
+else
+{
+	document.getElementById("label1").innerHTML="";
+}
+/*//password
+if(code=="")
+{
+	document.getElementById("label2").innerHTML="Enter password";
+	validate=false;
+}
+else if(code.length<6)
+{
+	document.getElementById("label2").innerHTML="password must be atleast 6 characters";
+	validate=false;
+}
+else
+{
+	document.getElementById("label2").innerHTML="";
+	validate=false;
+}
+//gender
+if(x==false && y==false)
+{
+	document.getElementById("label3").innerHTML="Select gender";
+	validate=false;
+}
+*/
+</script>
+<form name="form" onsubmit="form1();">
+
+<table bgcolor="skyblue" align="center" width="80%" height="90%">
+<tr>
+<td colspan="3" align="center" bgcolor="blue"><h1>Registration Form</h1></td>
+</tr>
+<tr>
+<td>Enter username:</td>
+<td><input type="text" id="uname"></input></td><label id="label1"></label>
+</tr>
+<tr>
+<td>Enter password:</td>
+<td><input type="text" id="pass"></input></td><label id="label2"></label>
+</tr>
+<tr>
+<td>Select gender:</td>
+<td>Male:<input type="radio" id="output">Female:<input type="radio" id="output"></td>
+<label id="label3"></label>
+</tr>
+<tr>
+<td>Enter e-mail id:</td>
+<td><input type="text" id="email"></td><label id="label4"></label>
+</tr>
+<tr>
+<td>Select department:</td>
+<td><select id="dept">
+    <option>Select</option>
+	<option>CS</option>
+	<option>Mech</option>
+	<option>Cicil</option>
+</select><label id="label5"></label>
+</td>
+</tr>
+<tr>
+<td>Languages known:</td>
+<td>English<input type="checkbox"></input>
+    Malayalam<input type="checkbox"></input>
+    Hindi<input type="checkbox"></input>
+    </td>
+</tr>
+<tr>
+<td>Enter birthday:</td>
+<td>Day<select><option>day</option></select>
+Month<select>
+<option>January</option>
+<option>Februay</option>
+<option>March</option>
+<option>April</option>
+<option>May</option><option>March</option>
+<option>June</option>
+<option>July</option>
+<option>Augest</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option></select>
+Year<select><option>Year</option></select></td>
+</tr>
+<tr>
+<td align="center" colspan="3"><input type="submit" value="Signin"></input></td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
